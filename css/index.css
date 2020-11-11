@@ -1,0 +1,32 @@
+/* @import url('search-input.css'); */
+body{
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows:  100px 50px auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    ". section ."
+    "footer footer footer";
+}
+header{
+    width: 90%;
+    grid-area: header;
+    background: #15161d;
+    margin: 0% auto;
+    padding: 5%;
+}
+nav{
+    grid-area:nav;
+    background: #dedede;
+}
+section{
+    grid-area: section;
+    
+    background-color: rgb(0, 255, 242);
+}
+footer{
+    grid-area: footer;
+
+    background-color: red;
+}
